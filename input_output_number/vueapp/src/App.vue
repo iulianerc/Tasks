@@ -1,43 +1,37 @@
-<template>
-  <div id="app">
-    <input-comp v-model="input" @input="calc"></input-comp>
-    <br><br>
-    <output-comp :data="operation"></output-comp>
-  </div>
-</template>
-
 <script>
-import input from "@/components/input";
-import output from "@/components/output";
+import InputComp  from "@/components/Input";
+import Output1 from "@/components/Output";
+import Output2 from "@/components/Output2";
+
 export default {
   data() {
     return {
-      input: {
-        x: 0,
-        Y: 0
-      },
-      operation:{
-        sum: 0,
-        dec: 0,
-        div: 0,
-        mult: 0
-      }
+      input: {oper:''},
     }
   },
-  methods: {
-    calc: function(){
-      this.operation.sum = this.input.x + this.input.y;
-      this.operation.dec = this.input.x - this.input.y;
-      this.operation.mult = this.input.x * this.input.y;
-      this.operation.div = this.input.x / this.input.y;
+  computed:{
+    isOper(){
+      return this.input.oper == '' ? true : false;
     }
   },
   components: {
-    'input-comp': input,
-    'output-comp': output
-  }
+    InputComp,
+    Output1,
+    Output2
+  },
 }
 </script>
+
+<template>
+  <div id="app">
+    <input-comp v-model="input" ></input-comp>
+    <br><br>
+    <output1 v-show="isOper" :input-data="input"></output1>
+    <output2 v-show="isOper == false" :input-data="input"></output2>
+  </div>
+</template>
+
+
 
 <style lang="scss">
 
