@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="937963e7-7056-4ce7-b3b5-486a24964606" name="Default Changelist" comment="Task-ul cu input output realizat utilizand npm" />
+    <list default="true" id="937963e7-7056-4ce7-b3b5-486a24964606" name="Default Changelist" comment="Task-ul cu input output realizat utilizand npm">
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Produce_pass/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vueapp/src/components/Output2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vueapp/src/components/Output2.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +75,7 @@
       <workItem from="1601994287381" duration="1292000" />
       <workItem from="1602059479885" duration="10337000" />
       <workItem from="1602104672360" duration="66000" />
+      <workItem from="1602161249964" duration="655000" />
     </task>
     <task id="LOCAL-00001" summary="Task-ul cu input output realizat utilizand npm">
       <created>1601809380438</created>
