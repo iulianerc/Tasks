@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe10f00e-1af9-445b-869a-d415f9b295ab" name="Default Changelist" comment="Store task : second commit">
+    <list default="true" id="fe10f00e-1af9-445b-869a-d415f9b295ab" name="Default Changelist" comment="Store task : final commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appstore/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/appstore/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appstore/src/components/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/appstore/src/components/Products.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appstore/src/components/ShoppingCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/appstore/src/components/ShoppingCart.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <updated>1602186343264</updated>
       <workItem from="1602186344478" duration="25536000" />
       <workItem from="1602243320712" duration="16054000" />
-      <workItem from="1602267801723" duration="4477000" />
+      <workItem from="1602267801723" duration="5085000" />
     </task>
     <task id="LOCAL-00001" summary="Store task : first commit">
       <created>1602211413245</created>
@@ -87,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602212133838</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Store task : final commit">
+      <created>1602273676054</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602273676055</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,17 +114,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Store task : first commit" />
     <MESSAGE value="Store task : second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Store task : second commit" />
+    <MESSAGE value="Store task : final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Store task : final commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1602266212496">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602266212496" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602212151634">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602273690109">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602212151634" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602273690109" />
     <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602211952333">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

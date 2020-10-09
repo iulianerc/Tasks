@@ -12,12 +12,14 @@ export default {
   },
   methods: {
     addToBuy(product) {
+      //verify if are the same element in Shopping cart
       let isProduct = 0;
       for (let i = 0; i < this.shoppingCartList.length; i++) {
         if (this.shoppingCartList[i].id === product.id) {
           isProduct = 1
         }
       }
+      // Push or add +1 to count
       if (!isProduct) {
         this.shoppingCartList.push(product);
       } else {
@@ -46,11 +48,6 @@ export default {
           <button @click="addToBuy(product)">Send in your cart</button>
         </div>
       </div>
-      <ul>
-        <li v-for="item in shoppingCartList" :key="item.name">
-          name: {{ item.name }} <br>count: {{ item.countToBuy }}<br> id: {{ item.id }}
-        </li>
-      </ul>
     </div>
   </div>
 </template>

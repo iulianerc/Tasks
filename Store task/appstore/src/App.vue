@@ -57,12 +57,19 @@ export default {
 
     <Products :products="products" :orderToBuy="orderToBuy"></Products>
 
+    <h1>Final object with order</h1>
     <ul>
-      <li v-for="item in orderToBuy.boughtProducts" :key="item.name">{{ item.name }} : {{ item.boughtCount }}</li>
+      <li v-for="item in orderToBuy.boughtProducts" :key="item.name">
+        <br>
+        Name product : {{ item.name }} <br>
+        count bought : {{ item.boughtCount }}
+        <br>
+      </li>
     </ul>
     <br>
-    {{ orderToBuy.totalCost }} $
+    Total price : {{ orderToBuy.totalCost }} $
     <br>
+    <h2>Contacts</h2>
     <ul>
       <li v-for="item in orderToBuy.contacts" :key="item.name">{{ item }}</li>
     </ul>
