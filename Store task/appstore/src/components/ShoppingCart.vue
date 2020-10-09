@@ -18,17 +18,6 @@ export default {
     }
   },
   computed:{
-    totalPrice(){
-      if (this.shopList[0]){
-        let index,totalPrice = 0;
-        for (index in this.shopList) {
-          totalPrice += this.shopList[index].pricePerUnit*this.shopList[index].countToBuy
-        }
-        return totalPrice
-      } else{
-        return ''
-      }
-    },
     producePrice(){
       let index,productPriceArray = [];
       for (index in this.shopList) {
@@ -36,6 +25,18 @@ export default {
       }
       return productPriceArray
     },
+    totalPrice(){
+        let price,totalPrice = 0;
+        for (price of this.producePrice) {
+          totalPrice += price;
+        }
+        if (this.shopList[0]){
+          return totalPrice
+        } else {
+          return ''
+        }
+
+    }
   }
 }
 </script>
