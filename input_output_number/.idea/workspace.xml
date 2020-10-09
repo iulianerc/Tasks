@@ -20,8 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="937963e7-7056-4ce7-b3b5-486a24964606" name="Default Changelist" comment="Task-ul cu input output realizat utilizand npm">
-      <change beforePath="$PROJECT_DIR$/../Produce_pass/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Produce_pass/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/.idea/Produce_pass.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/producetest/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/producetest/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/producetest/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/producetest/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/producetest/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/producetest/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/producetest/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/producetest/src/components/Products.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Produce_pass/producetest/src/main.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vueapp/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vueapp/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vueapp/src/components/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vueapp/src/components/Input.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vueapp/src/components/Output2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vueapp/src/components/Output2.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +90,10 @@
       <workItem from="1601994287381" duration="1292000" />
       <workItem from="1602059479885" duration="10337000" />
       <workItem from="1602104672360" duration="66000" />
-      <workItem from="1602161249964" duration="655000" />
+      <workItem from="1602161249964" duration="1273000" />
+      <workItem from="1602164015605" duration="4922000" />
+      <workItem from="1602185894829" duration="400000" />
+      <workItem from="1602203333731" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="Task-ul cu input output realizat utilizand npm">
       <created>1601809380438</created>
@@ -119,10 +137,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="757" y="329" key="#Web_Browsers/0.0.1920.1080@0.0.1920.1080" timestamp="1602063018979" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1602104733033">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1602186339927">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602104733033" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602186339927" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1601809625983">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

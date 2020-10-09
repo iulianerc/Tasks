@@ -6,12 +6,15 @@ import Output2 from "@/components/Output2";
 export default {
   data() {
     return {
-      input: {oper:''},
+      input: {},
     }
   },
-  computed:{
-    isOper(){
-      return this.input.oper == '' ? true : false;
+  computed: {
+    isOperator() {
+      return this.input.x && this.input.y && this.input.operator
+    },
+    isInput() {
+      return this.input.x && this.input.y && !this.input.operator;
     }
   },
   components: {
@@ -26,8 +29,8 @@ export default {
   <div id="app">
     <input-comp v-model="input" ></input-comp>
     <br><br>
-    <output1 v-show="isOper" :input-data="input"></output1>
-    <output2 v-show="isOper == false" :input-data="input"></output2>
+    <output1 v-show="isInput" :input-data="input"></output1>
+    <output2 v-show="isOperator" :input-data="input"></output2>
   </div>
 </template>
 
