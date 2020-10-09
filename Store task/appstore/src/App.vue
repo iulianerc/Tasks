@@ -10,29 +10,33 @@ export default {
     return {
       products: [
         {
+          id: '1',
           name: 'Banana',
           pricePerUnit: '20',
           typeOfUnit: 'Kg',
           countToBuy: 1,
         },
         {
+          id: '2',
           name: 'Apple',
           pricePerUnit: '10',
           typeOfUnit: 'Kg',
           countToBuy: 1,
         },
         {
+          id: '3',
           name: 'book',
           pricePerUnit: '150',
           typeOfUnit: 'unit',
           countToBuy: 1,
         },
         {
+          id: '4',
           name: 'Notebook Asus ...',
           pricePerUnit: '11000',
           typeOfUnit: 'unit',
           countToBuy: 1,
-        },
+        }
       ],
       orderToBuy: {
         boughtProducts: [],
@@ -50,7 +54,9 @@ export default {
 
 <template>
   <div id="app">
+
     <Products :products="products" :orderToBuy="orderToBuy"></Products>
+
     <ul>
       <li v-for="item in orderToBuy.boughtProducts" :key="item.name">{{ item.name }} : {{ item.boughtCount }}</li>
     </ul>

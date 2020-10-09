@@ -1,11 +1,9 @@
 <script>
 export default {
   name: "ShoppingCart",
-  props: ['shopList','orderToBuy'],
-  data() {
-    return {
-
-    }
+  props: {
+    shopList: Array,
+    orderToBuy: Object
   },
   methods: {
     changeCount(count, index) {
@@ -37,22 +35,22 @@ export default {
         productPriceArray.push(this.shopList[index].pricePerUnit*this.shopList[index].countToBuy)
       }
       return productPriceArray
-    }
+    },
   }
 }
 </script>
 
 <template>
-  <div class="shoppingCart">
+  <div class="shoppingCart" >
     Your Shopping cart
     <img src="../assets/cart.png" alt="cart" height="25px">
     <div class="shopProduct">
       <div v-for="(product,index) in shopList" :key="product.name">
         <div class="product">
-          <div class="name">{{ product.name }}</div>
+          <div class="name">{{ product.name }} {{index}}</div>
           <div class="pricePerUnit">{{ product.pricePerUnit }}</div>
           <div>
-            <input class="countToBuy" type="number" @input="changeCount($event.target.value,index)" value="1"> {{product.typeOfUnit}}
+            <input class="countToBuy" type="number" @input="changeCount($event.target.value,index)" :value="product.countToBuy"> {{product.typeOfUnit}}
           </div>
           <div class="priceProduct">{{ producePrice[index] }}</div>
         </div>
