@@ -35,7 +35,6 @@ export default {
         } else {
           return ''
         }
-
     }
   }
 }
@@ -73,64 +72,64 @@ export default {
   </div>
 </template>
 
-<style scoped>
-.shoppingCart {
-  min-width: 200px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  position: relative;
-  background-color: lightblue;
-  font-size: 16px;
-  padding: 10px;
-}
+  <style scoped>
+  .shoppingCart {
+    min-width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    background-color: lightblue;
+    font-size: 16px;
+    padding: 10px;
+  }
 
-.shoppingCart:hover {
-  background-color: cornflowerblue;
-}
+  .shoppingCart:hover {
+    background-color: cornflowerblue;
+  }
 
-.shopProduct {
-  display: none;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  z-index: 1;
-  background-color: #fff;
-  border: solid 1px;
-  padding: 20px;
-}
+  .shopProduct {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: solid 1px;
+    padding: 20px;
+  }
 
-.shoppingCart:hover .shopProduct {
-  display: block;
-}
+  .shoppingCart:hover .shopProduct {
+    display: block;
+  }
 
-.product {
-  display: grid;
-  grid-template-columns: 30% 25% 20% 25%;
-  grid-gap: 10px;
-  width: 600px;
-}
+  .product {
+    display: grid;
+    grid-template-columns: 30% 25% 20% 25%;
+    grid-gap: 10px;
+    width: 600px;
+  }
 
-.name {
-  overflow: hidden;
-}
+  .name {
+    overflow: hidden;
+  }
 
-.countToBuy {
-  max-width: 70px;
-  text-align: center;
-  padding-left: 15px;
-}
+  .countToBuy {
+    max-width: 70px;
+    text-align: center;
+    padding-left: 15px;
+  }
 
-.totalPrice {
-  text-align: right;
-  padding-right: 30px;
-}
+  .totalPrice {
+    text-align: right;
+    padding-right: 30px;
+  }
 
-.makeOrder {
-  text-align: right;
-}
+  .makeOrder {
+    text-align: right;
+  }
 
-.makeOrder button {
-  cursor: pointer;
-}
-</style>
+  .makeOrder button {
+    cursor: pointer;
+  }
+  </style>

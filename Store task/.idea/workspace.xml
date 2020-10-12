@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe10f00e-1af9-445b-869a-d415f9b295ab" name="Default Changelist" comment="Store task : final commit">
+    <list default="true" id="fe10f00e-1af9-445b-869a-d415f9b295ab" name="Default Changelist" comment="Store task : optimization commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appstore/src/components/ShoppingCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/appstore/src/components/ShoppingCart.vue" afterDir="false" />
     </list>
@@ -49,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Store task" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Store task 2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,7 +69,9 @@
       <updated>1602186343264</updated>
       <workItem from="1602186344478" duration="25536000" />
       <workItem from="1602243320712" duration="16054000" />
-      <workItem from="1602267801723" duration="6442000" />
+      <workItem from="1602267801723" duration="6478000" />
+      <workItem from="1602499735992" duration="7701000" />
+      <workItem from="1602539219119" duration="2799000" />
     </task>
     <task id="LOCAL-00001" summary="Store task : first commit">
       <created>1602211413245</created>
@@ -99,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602274386637</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Store task : optimization commit">
+      <created>1602275589922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602275589922</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,17 +130,19 @@
     <MESSAGE value="Store task : first commit" />
     <MESSAGE value="Store task : second commit" />
     <MESSAGE value="Store task : final commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Store task : final commit" />
+    <MESSAGE value="Store task : optimization commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Store task : optimization commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1602266212496">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1602539311644">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602266212496" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602274388361">
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1602500174548" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602539311644" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602275592599">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602274388361" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602275592599" />
     <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602211952333">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
