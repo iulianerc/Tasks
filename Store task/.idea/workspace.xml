@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe10f00e-1af9-445b-869a-d415f9b295ab" name="Default Changelist" comment="Store task : optimization commit">
+      <change beforePath="$PROJECT_DIR$/../Store task 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task 2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appstore/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/appstore/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appstore/src/components/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/appstore/src/components/Products.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appstore/src/components/ShoppingCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/appstore/src/components/ShoppingCart.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
+        <option value="package.json" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,9 +52,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Store task 2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,6 +63,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -72,6 +79,13 @@
       <workItem from="1602267801723" duration="6478000" />
       <workItem from="1602499735992" duration="7701000" />
       <workItem from="1602539219119" duration="2799000" />
+      <workItem from="1602567137592" duration="693000" />
+      <workItem from="1602590195683" duration="282000" />
+      <workItem from="1602848727776" duration="9389000" />
+      <workItem from="1603172165845" duration="2259000" />
+      <workItem from="1603691786154" duration="53000" />
+      <workItem from="1603866155951" duration="8329000" />
+      <workItem from="1603916538195" duration="1706000" />
     </task>
     <task id="LOCAL-00001" summary="Store task : first commit">
       <created>1602211413245</created>
@@ -134,11 +148,19 @@
     <option name="LAST_COMMIT_MESSAGE" value="Store task : optimization commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1602539311644">
+    <state x="586" y="218" key="#Inspections" timestamp="1602854896956">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1602500174548" />
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602539311644" />
+    <state x="586" y="218" key="#Inspections/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1602854896956" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1603691815840">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1602848752608" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1603691815840" />
+    <state x="461" y="185" key="SettingsEditor" timestamp="1602848837428">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1602848837428" />
     <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602275592599">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -147,6 +169,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602211952333" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1602852568036">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1602852568036" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602202979410">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

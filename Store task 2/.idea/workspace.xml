@@ -19,8 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65272b89-d60f-45bd-a944-cd8e76150a0e" name="Default Changelist" comment="">
+    <list default="true" id="65272b89-d60f-45bd-a944-cd8e76150a0e" name="Default Changelist" comment="Vuex store in task">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Store task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store task/appstore/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task/appstore/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store task/appstore/src/components/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task/appstore/src/components/Products.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Store task/appstore/src/components/ShoppingCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task/appstore/src/components/ShoppingCart.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,8 +61,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602539313510</updated>
-      <workItem from="1602539314919" duration="6928000" />
+      <workItem from="1602539314919" duration="7300000" />
+      <workItem from="1602567097042" duration="738000" />
+      <workItem from="1602848759532" duration="603000" />
     </task>
+    <task id="LOCAL-00001" summary="Vuex store in task">
+      <created>1602546671445</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602546671445</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +88,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Vuex store in task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vuex store in task" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1602567134101">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602567134101" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602546676424">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602546676424" />
   </component>
 </project>

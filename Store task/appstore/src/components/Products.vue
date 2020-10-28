@@ -1,34 +1,48 @@
 <script>
-import ShoppingCart from "@/components/ShoppingCart";
+import Products from '../Products.json'
 
 export default {
   name: "Products",
-  components: {ShoppingCart},
-  props: ['products', 'orderToBuy'],
   data() {
     return {
       shoppingCartList: [],
+      products: []
     }
   },
+  mounted() {
+    this.products = Products
+  },
   methods: {
-    addToBuy(product) {
-      //verify if are the same element in Shopping cart
+    addToCart(product) {
       let isProduct = 0;
-      for (let i = 0; i < this.shoppingCartList.length; i++) {
-        if (this.shoppingCartList[i].id === product.id) {
-          isProduct = 1
-        }
-      }
+      //verify if are the same element in Shopping cart
+                    /*for (let i = 0; i < this.shoppingCartList.length; i++) {
+                      if (this.shoppingCartList[i].id === product.id) {
+                        isProduct = 1
+                      }
+                    }*/
+      //    New version
+      this.shoppingCartList.map( el => {
+        if (el.id === product.id) isProduct = 1
+      })
+
       // Push or add +1 to count
       if (!isProduct) {
+        product.count = 1
         this.shoppingCartList.push(product);
       } else {
-        for (let i = 0; i < this.shoppingCartList.length; i++) {
-          if (this.shoppingCartList[i].id === product.id) {
-            this.shoppingCartList[i].countToBuy++;
-          }
-        }
+        this.shoppingCartList = this.shoppingCartList.map( el => {
+          if ( (el.id === product.id) && (el.maxCount > el.count) ) el.count++
+          return el
+        })
+                    //    Old version
+                    /*for (let i = 0; i < this.shoppingCartList.length; i++) {
+                      if (this.shoppingCartList[i].id === product.id) {
+                        this.shoppingCartList[i].count++;
+                      }
+                    }*/
       }
+      this.$emit('addCart',this.shoppingCartList)
     }
   },
 }
@@ -36,16 +50,13 @@ export default {
 
 <template>
   <div>
-    <h1>Products</h1>
+    <h1>Products </h1>
     <div id="products">
-      <div class="shopCart">
-        <shopping-cart :order-to-buy="orderToBuy" :shopList="shoppingCartList"></shopping-cart>
-      </div>
       <div v-for="product in products" :key="product.id" class="product">
         {{ product.name }}
-        <div class="price">{{ product.pricePerUnit }} MDL / {{ product.typeOfUnit }}</div>
+        <div class="price">{{ product.price }} MDL / {{ product.unit }}</div>
         <div class="addProduct">
-          <button @click="addToBuy(product)">Send in your cart</button>
+          <button @click="addToCart(product)">Send in your cart</button>
         </div>
       </div>
     </div>
@@ -56,10 +67,7 @@ export default {
 h1 {
   text-align: center;
 }
-
 #products {
-  width: 80%;
-  margin: auto;
   padding: 100px 50px;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -67,13 +75,6 @@ h1 {
   background: #97a2a2;
   position: relative;
 }
-
-.shopCart {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
 .product {
   background-color: #97A2A2;
   border: solid 1px;

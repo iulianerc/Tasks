@@ -2,39 +2,54 @@
 export default {
   name: "ShoppingCart",
   props: {
-    shopList: Array,
-    orderToBuy: Object
+    shopList: {
+      type: Array,
+      required: true
+    }
   },
-  methods: {
-    changeCount(count, index) {
-      this.shopList[index].countToBuy = count;
-    },
-    sendOrder(){
-      this.orderToBuy.totalCost = this.totalPrice;
-      let index;
-      for (index in this.shopList){
-        this.orderToBuy.boughtProducts.push({name: this.shopList[index].name, boughtCount: this.shopList[index].countToBuy})
+  data(){
+    return {
+      contacts: {
+        name: '',
+        address: '',
+        phone: ''
       }
     }
   },
-  computed:{
-    producePrice(){
-      let index,productPriceArray = [];
-      for (index in this.shopList) {
-        productPriceArray.push(this.shopList[index].pricePerUnit*this.shopList[index].countToBuy)
+  computed: {
+    prices(){
+      let productPrices = [];
+      let totalPrice = 0;
+      productPrices = this.shopList.map( el => {
+        return el.count * el.price;
+      })
+      /*for (let x in this.shopList) {
+        productPrices[x] = this.shopList[x].price * this.shopList[x].count
+      }*/
+      productPrices.map( el => {
+        totalPrice += el;
+      })
+      return {
+        productPrices: productPrices,
+        totalPrices: totalPrice,
       }
-      return productPriceArray
+    }
+  },
+  methods: {
+    changeCount(count, index) {
+      this.shopList[index].count = +count;
     },
-    totalPrice(){
-        let price,totalPrice = 0;
-        for (price of this.producePrice) {
-          totalPrice += price;
-        }
-        if (this.shopList[0]){
-          return totalPrice
-        } else {
-          return ''
-        }
+    makeOrder(){
+      /*this.orderToBuy.totalCost = this.totalPrice;
+      /!*for (let index in this.shopList){
+        this.orderToBuy.boughtProducts.push({name: this.shopList[index].name, boughtCount: this.shopList[index].countToBuy})
+      }*!/
+      this.orderToBuy.boughtProducts = this.shopList.map(el => ({
+        name: el.name,
+        boughtCount: el.countToBuy
+      }))*/
+      
+      this.$emit('data')
     }
   }
 }
@@ -45,28 +60,28 @@ export default {
     Your Shopping cart
     <img src="../assets/cart.png" alt="cart" height="25px">
     <div class="shopProduct">
-      <div v-for="(product,index) in shopList" :key="product.name">
+      <div v-for="(product,index) in shopList" :key="product.id">
         <div class="product">
-          <div class="name">{{ product.name }} {{index}}</div>
-          <div class="pricePerUnit">{{ product.pricePerUnit }}</div>
+          <div class="name">{{ product.name }}</div>
+          <div class="pricePerUnit">{{ product.price }}</div>
           <div>
-            <input class="countToBuy" type="number" @input="changeCount($event.target.value,index)" :value="product.countToBuy"> {{product.typeOfUnit}}
+            <input class="countToBuy" type="number" @input="changeCount($event.target.value,index)" :value="product.count" min="1"> {{product.unit}}
           </div>
-          <div class="priceProduct">{{ producePrice[index] }}</div>
+          <div class="priceProduct">{{ prices.productPrices[index] }}</div>
         </div>
       </div>
-      <div class="totalPrice">{{ totalPrice }}</div>
+      <div class="totalPrice">{{ prices.totalPrices }}</div>
       <div class="inputName">
-        <input type="text" placeholder="Your Name" v-model="orderToBuy.contacts.name">
+        <input type="text" placeholder="Your Name" v-model="contacts.name">
       </div>
       <div class="address">
-        <input type="text" placeholder="Your Address" v-model="orderToBuy.contacts.address">
+        <input type="text" placeholder="Your Address" v-model="contacts.address">
       </div>
       <div class="phone">
-        <input type="text" placeholder="Your Phone" v-model="orderToBuy.contacts.phone">
+        <input type="text" placeholder="Your Phone" v-model="contacts.phone">
       </div>
       <div class="makeOrder">
-        <button @click.once="sendOrder()">Make Order</button>
+        <button @click.once="makeOrder()">Make Order</button>
       </div>
     </div>
   </div>
@@ -74,7 +89,7 @@ export default {
 
   <style scoped>
   .shoppingCart {
-    min-width: 200px;
+    width: 200px;
     height: 40px;
     line-height: 40px;
     text-align: center;
