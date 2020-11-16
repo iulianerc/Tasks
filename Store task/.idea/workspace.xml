@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe10f00e-1af9-445b-869a-d415f9b295ab" name="Default Changelist" comment="Store task : optimization commit">
+    <list default="true" id="fe10f00e-1af9-445b-869a-d415f9b295ab" name="Default Changelist" comment="Store task : modificarea codului code-style">
       <change beforePath="$PROJECT_DIR$/../Store task 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task 2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appstore/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/appstore/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appstore/src/components/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/appstore/src/components/Products.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appstore/src/components/ShoppingCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/appstore/src/components/ShoppingCart.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +83,16 @@
       <workItem from="1603172165845" duration="2259000" />
       <workItem from="1603691786154" duration="53000" />
       <workItem from="1603866155951" duration="8329000" />
-      <workItem from="1603916538195" duration="1706000" />
+      <workItem from="1603916538195" duration="4907000" />
+      <workItem from="1604169177939" duration="6000" />
+      <workItem from="1604318077380" duration="1040000" />
+      <workItem from="1604320353278" duration="2995000" />
+      <workItem from="1604471101667" duration="3535000" />
+      <workItem from="1604503598850" duration="16000" />
+      <workItem from="1604503647155" duration="1620000" />
+      <workItem from="1605109041505" duration="669000" />
+      <workItem from="1605129305634" duration="771000" />
+      <workItem from="1605276453847" duration="929000" />
     </task>
     <task id="LOCAL-00001" summary="Store task : first commit">
       <created>1602211413245</created>
@@ -122,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602275589922</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Store task : modificarea codului code-style">
+      <created>1603918364926</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603918364926</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,26 +159,32 @@
     <MESSAGE value="Store task : second commit" />
     <MESSAGE value="Store task : final commit" />
     <MESSAGE value="Store task : optimization commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Store task : optimization commit" />
+    <MESSAGE value="Store task : modificarea codului code-style" />
+    <option name="LAST_COMMIT_MESSAGE" value="Store task : modificarea codului code-style" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="586" y="218" key="#Inspections" timestamp="1602854896956">
+    <state x="254" y="47" width="904" height="985" key="#HTML" timestamp="1604471966072">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="254" y="47" width="904" height="985" key="#HTML/0.0.1920.1080@0.0.1920.1080" timestamp="1604471966072" />
+    <state x="586" y="218" key="#Inspections" timestamp="1604472171488">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="586" y="218" key="#Inspections/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1602854896956" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1603691815840">
+    <state x="586" y="218" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1604472171488" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1604503610862">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1602848752608" />
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1603691815840" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1604319143577" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604503610862" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1602848837428">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1602848837428" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602275592599">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1603918506742">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602275592599" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1603918506742" />
     <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602211952333">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

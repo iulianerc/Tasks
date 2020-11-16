@@ -23,9 +23,6 @@ export default {
       productPrices = this.shopList.map( el => {
         return el.count * el.price;
       })
-      /*for (let x in this.shopList) {
-        productPrices[x] = this.shopList[x].price * this.shopList[x].count
-      }*/
       productPrices.map( el => {
         totalPrice += el;
       })
@@ -33,7 +30,7 @@ export default {
         productPrices: productPrices,
         totalPrices: totalPrice,
       }
-    }
+    },
   },
   methods: {
     changeCount(count, index) {
@@ -65,7 +62,7 @@ export default {
           <div class="name">{{ product.name }}</div>
           <div class="pricePerUnit">{{ product.price }}</div>
           <div>
-            <input class="countToBuy" type="number" @input="changeCount($event.target.value,index)" :value="product.count" min="1"> {{product.unit}}
+            <input class="countToBuy" type="number" @input="changeCount($event.target.value,index)" :value="product.count" min="1" :max="product.maxCount"> {{product.unit}}
           </div>
           <div class="priceProduct">{{ prices.productPrices[index] }}</div>
         </div>

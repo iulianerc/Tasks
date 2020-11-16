@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Banana",
+      "price": 10,
+      "unit": "Kg",
+      "maxCount": 25
+    },
+    {
+      "id": 2,
+      "name": "Mere",
+      "price": 10,
+      "unit": "Kg",
+      "maxCount": 25
+    },
+    {
+      "id": 4,
+      "name": "Calculator",
+      "price": 10000,
+      "unit": "unit",
+      "maxCount": 5
+    },
+    {
+      "name": "",
+      "price": "",
+      "unit": "",
+      "maxCount": "",
+      "id": 5
+    }
+  ]
+}

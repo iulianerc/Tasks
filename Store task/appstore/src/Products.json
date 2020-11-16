@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Banana",
+    "price": 20,
+    "unit": "Kg",
+    "maxCount": 20
+  },
+  {
+    "id": 2,
+    "name": "Mere",
+    "price": 10,
+    "unit": "Kg",
+    "maxCount": 25
+  },
+  {
+    "id": 3,
+    "name": "Carne premium",
+    "price": 110,
+    "unit": "Kg",
+    "maxCount": 10
+  },
+  {
+    "id": 4,
+    "name": "Calculator",
+    "price": 10000,
+    "unit": "unit",
+    "maxCount": 5
+  },
+  {
+    "id": 5,
+    "name": "Phone",
+    "price": 10500,
+    "unit": "unit",
+    "maxCount": 5
+  }
+]

@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65272b89-d60f-45bd-a944-cd8e76150a0e" name="Default Changelist" comment="Vuex store in task">
+    <list default="true" id="afedf2f0-7868-4962-aca0-2b3a3a69e8ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Store task 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task 2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Store task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Store task/appstore/src/components/ShoppingCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task/appstore/src/components/ShoppingCart.vue" afterDir="false" />
     </list>
@@ -28,19 +29,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1inNICbw9tvW4wBYI6APq8bPZaC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1jjYqAkNBgrxYBUgfRC6wWV4u32" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Store task" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,27 +62,34 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TaskWork\Native_JS_oop" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="65272b89-d60f-45bd-a944-cd8e76150a0e" name="Default Changelist" comment="" />
-      <created>1602539313510</created>
+      <changelist id="afedf2f0-7868-4962-aca0-2b3a3a69e8ff" name="Default Changelist" comment="" />
+      <created>1604319155673</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1602539313510</updated>
-      <workItem from="1602539314919" duration="7300000" />
-      <workItem from="1602567097042" duration="738000" />
-      <workItem from="1602848759532" duration="603000" />
-      <workItem from="1604318484705" duration="622000" />
+      <updated>1604319155673</updated>
+      <workItem from="1604319156760" duration="8672000" />
+      <workItem from="1604503617082" duration="663000" />
+      <workItem from="1604557508878" duration="11028000" />
+      <workItem from="1604667878103" duration="11574000" />
+      <workItem from="1604751423197" duration="5153000" />
+      <workItem from="1604988159603" duration="594000" />
+      <workItem from="1605013580547" duration="2805000" />
+      <workItem from="1605105867804" duration="2795000" />
+      <workItem from="1605126957104" duration="7408000" />
+      <workItem from="1605253922610" duration="21158000" />
+      <workItem from="1605336688665" duration="4141000" />
+      <workItem from="1605474231607" duration="8557000" />
+      <workItem from="1605516881754" duration="21788000" />
+      <workItem from="1605540479143" duration="200000" />
     </task>
-    <task id="LOCAL-00001" summary="Vuex store in task">
-      <created>1602546671445</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1602546671445</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,18 +107,20 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Vuex store in task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vuex store in task" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1602567134101">
+    <state x="586" y="218" key="#Inspections" timestamp="1604751503928">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602567134101" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602546676424">
+    <state x="586" y="218" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1604751503928" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1605276449905">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602546676424" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1604320350191" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605276449905" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1605133355749">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1604587737781" />
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605133355749" />
   </component>
 </project>
