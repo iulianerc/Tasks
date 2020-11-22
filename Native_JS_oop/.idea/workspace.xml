@@ -19,10 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afedf2f0-7868-4962-aca0-2b3a3a69e8ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Store task 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task 2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Store task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Store task/appstore/src/components/ShoppingCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Store task/appstore/src/components/ShoppingCart.vue" afterDir="false" />
+    <list default="true" id="afedf2f0-7868-4962-aca0-2b3a3a69e8ff" name="Default Changelist" comment="ended task">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Products.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom-vue-project-template" beforeDir="false" afterPath="$PROJECT_DIR$/../custom-vue-project-template" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Store task" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,9 +67,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\TaskWork\Native_JS_oop\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\TaskWork\Native_JS_oop" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="termina" />
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,7 +101,23 @@
       <workItem from="1605474231607" duration="8557000" />
       <workItem from="1605516881754" duration="21788000" />
       <workItem from="1605540479143" duration="200000" />
+      <workItem from="1605541238930" duration="744000" />
+      <workItem from="1605684297572" duration="2115000" />
+      <workItem from="1605769639547" duration="2346000" />
+      <workItem from="1605778817758" duration="3756000" />
+      <workItem from="1605786200952" duration="39000" />
+      <workItem from="1605786251376" duration="5216000" />
+      <workItem from="1605888508026" duration="213000" />
+      <workItem from="1605974951575" duration="51000" />
     </task>
+    <task id="LOCAL-00001" summary="ended task">
+      <created>1605541371566</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605541371566</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,20 +135,40 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ended task" />
+    <option name="LAST_COMMIT_MESSAGE" value="ended task" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="586" y="218" key="#Inspections" timestamp="1604751503928">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="586" y="218" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1604751503928" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1605276449905">
+    <state x="715" y="364" key="#Notifications" timestamp="1605541388794">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="715" y="364" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1605541388794" />
+    <state x="732" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605788404624">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="732" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1605788404624" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1605974995235">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1604320350191" />
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605276449905" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1605133355749">
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605974995235" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1605541373779">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1605541373779" />
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1605771019215">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1604587737781" />
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605133355749" />
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605771019215" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1605788373140">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605788373140" />
   </component>
 </project>
