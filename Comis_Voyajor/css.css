@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 h2 {
     text-align: center;
 }
@@ -37,6 +40,7 @@ h2 {
     -moz-border-radius: 50%;
     border-radius: 50%;
     cursor: all-scroll;
+    background: white;
 }
 .inputName{
     border: none;
@@ -60,7 +64,68 @@ h2 {
     width: 100%;
     border: none;
     text-align: center;
+    background-color: transparent;
 }
 .costBlock input:focus{
     outline: none;
+}
+#svgPlato {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+svg line {
+    cursor: pointer;
+}
+.startWrapper{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.start {
+    height: 40px;
+    width: 200px;
+    font-size: 26px;
+    font-weight: 500;
+    border: lightcoral 2px solid;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+}
+.start:hover {
+    background-color: lightcoral;
+}
+.start:hover .variant {
+    display: block;
+}
+.variant{
+    position: absolute;
+    bottom: 100%;
+    left: -2px;
+    width: calc(100% + 4px);
+    display: none;
+}
+.variant_item{
+    width: 100%;
+    line-height: 1;
+    padding: 10px 0;
+}
+.variant_item:last-child {
+    padding: 10px 0 20px;
+}
+.variant_item button{
+    width: inherit;
+    height: 30px;
+    background-color: white;
+    border: solid 1px lightcoral;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.variant_item button:hover {
+    background-color: lightpink;
 }

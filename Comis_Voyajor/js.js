@@ -1,3 +1,63 @@
+class Cell {
+  constructor([cell1, cell2, cost]) {
+    this.cell1 = cell1
+    this.cell2 = cell2
+    this.cost = cost
+  }
+}
+
+class CellList {
+  constructor(linkCell, cost) {
+    this.list = [{linkCell, cost}]
+  }
+  
+  pushLink(linkCell, cost) {
+    let isLink = 1
+    this.list.forEach(link => {
+      if (link.linkCell === linkCell) {
+        isLink = 0
+      }
+    })
+    if (isLink) {
+      
+      this.list.push({linkCell, cost})
+    }
+  }
+}
+
+class CellRelation {
+  constructor() {
+    this.arr = []
+    this.cell = {}
+  }
+  
+  addRelation(...arg) {
+    let isRel = 1
+    this.arr.forEach(rel => {
+      if (
+        (rel.cell1 === arg[0]) && (rel.cell2 === arg[1])
+        || (rel.cell2 === arg[0]) && (rel.cell1 === arg[1])) {
+        isRel = 0
+      }
+    })
+    if (isRel) {
+      this.arr.push(new Cell(arg))
+    }
+    this.cell[arg[0]] ? this.cell[arg[0]].pushLink(arg[1], arg[2]) : this.cell[arg[0]] = new CellList(arg[1], arg[2])
+    this.cell[arg[1]] ? this.cell[arg[1]].pushLink(arg[0], arg[2]) : this.cell[arg[1]] = new CellList(arg[0], arg[2])
+  }
+  
+  getRelations() {
+    return this.arr
+  }
+  
+  getCellList() {
+    return this.cell
+  }
+}
+
+const cellRelation = new CellRelation()
+
 const moveCell = (cell) => {
   const cellStyle = getComputedStyle(cell)
   let x
@@ -39,11 +99,8 @@ const changeName = (event) => {
   currentCell.removeAttribute("id")
 }
 
-const addCost = document.getElementById("addCost")
-addCost.addEventListener("click", async () => {
-  const costBlock = document.createElement("div")
-  costBlock.classList.add("costBlock")
-  costBlock.innerHTML = `<input type="text" onfocusout="" value="">`
+const addCostButton = document.getElementById("addCost")
+const addCost = () => {
   let cell1
   let cell2
   let foundedCell = 0
@@ -60,22 +117,56 @@ addCost.addEventListener("click", async () => {
     }
     if (foundedCell === 2) {
       document.removeEventListener("click", selectCell)
-      const cell1Top = cell1.offsetTop
-      const cell1Left = cell1.offsetLeft
-      const cell2Top = cell2.offsetTop
-      const cell2Left = cell2.offsetLeft
-      const width = Math.round(Math.sqrt(Math.abs(cell1Top - cell2Top) ** 2 + Math.abs(cell1Left - cell2Left) ** 2))
-      const deg = Math.asin(Math.abs((cell1Left - cell2Left)) / width) * 180 / Math.PI
-      console.log(deg)
-      console.log(Math.abs((cell1Top - cell2Top)) / width)
-      costBlock.style.cssText = `
-       width: ${width}px;
-       transform: rotate(${cell1Top > cell2Top ? deg + 90 : -(deg + 90)}deg);
-       left: ${cell1Left > cell2Left ? cell2Left : cell1Left}px;
-       top: ${cell1Top > cell2Top ? (cell1Top - cell2Top) / 2 + cell2Top : (cell2Top - cell1Top) / 2 + cell1Top}px;
+      const cell1Top = cell1.offsetTop + 40
+      const cell1Left = cell1.offsetLeft + 40
+      const cell2Top = cell2.offsetTop + 40
+      const cell2Left = cell2.offsetLeft + 40
+      const svg = document.getElementById("svgPlato")
+      svg.innerHTML += `
+        <line x1="${cell1Left}" y1="${cell1Top}" x2="${cell2Left}" y2="${cell2Top}" style="stroke: black;stroke-width:2" />
       `
+      const cost = Number(prompt(`Dati costul drumului ${cell1.innerText} - ${cell2.innerText}`))
+      cellRelation.addRelation(cell1.innerText, cell2.innerText, cost)
     }
   }
   document.addEventListener("click", selectCell)
-  document.body.appendChild(costBlock)
+}
+addCostButton.addEventListener("click", addCost)
+document.addEventListener("contextmenu", (event) => {
+  if (event.ctrlKey) {
+    event.preventDefault()
+    const cellList = document.querySelectorAll(".cell")
+    let ok = 1
+    cellList.forEach(cell => {
+      if (cell.innerText === '') {
+        ok = 0
+      }
+    })
+    if (ok) {
+      addCost()
+    } else alert('Dati denumire tuturor celulelor')
+  }
+})
+
+// Comis voiajor
+
+const greedy = document.getElementById("greedy")
+const heuristic = document.getElementById("heuristic")
+const backtracking = document.getElementById("backtracking")
+const direct = document.getElementById("direct")
+greedy.addEventListener("click", () => {
+  console.log()
+})
+heuristic.addEventListener("click", () => {
+
+})
+backtracking.addEventListener("click", () => {
+
+})
+direct.addEventListener("click", () => {
+  const getArray = (list) => {
+    return list.map( cell =>  cell.cost)
+  }
+  
+  console.log( Math.min.apply(null, getArray(cellRelation.getRelations()) ))
 })
