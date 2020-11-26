@@ -12,16 +12,12 @@ class CellList {
   }
   
   pushLink(linkCell, cost) {
-    let isLink = 1
     this.list.forEach(link => {
       if (link.linkCell === linkCell) {
-        isLink = 0
+        return ''
       }
     })
-    if (isLink) {
-      
-      this.list.push({linkCell, cost})
-    }
+    this.list.push({linkCell, cost})
   }
 }
 
@@ -31,12 +27,15 @@ class CellRelation {
     this.cell = {}
   }
   
+  notSetRelation(rel, arg) {
+    return (rel.cell1 === arg[0]) && (rel.cell2 === arg[1])
+      || (rel.cell2 === arg[0]) && (rel.cell1 === arg[1])
+  }
+  
   addRelation(...arg) {
     let isRel = 1
     this.arr.forEach(rel => {
-      if (
-        (rel.cell1 === arg[0]) && (rel.cell2 === arg[1])
-        || (rel.cell2 === arg[0]) && (rel.cell1 === arg[1])) {
+      if (this.notSetRelation(rel, arg)) {
         isRel = 0
       }
     })
@@ -105,7 +104,9 @@ const addCost = () => {
   let cell2
   let foundedCell = 0
   const selectCell = (event) => {
-    if (event.target.className === 'cell') {
+    let isCell = event.target.classList
+    isCell = [...isCell].includes('cell')
+    if (isCell) {
       if (!cell1) {
         cell1 = event.target
         foundedCell++
@@ -136,15 +137,13 @@ document.addEventListener("contextmenu", (event) => {
   if (event.ctrlKey) {
     event.preventDefault()
     const cellList = document.querySelectorAll(".cell")
-    let ok = 1
-    cellList.forEach(cell => {
-      if (cell.innerText === '') {
-        ok = 0
-      }
-    })
-    if (ok) {
+    const cellListArr = [...cellList]
+    let ok = cellListArr.find(cell => cell.innerText === '')
+    if (!ok) {
       addCost()
-    } else alert('Dati denumire tuturor celulelor')
+    } else {
+      alert('Dati valoare tuturor celulelor !')
+    }
   }
 })
 
@@ -153,20 +152,40 @@ document.addEventListener("contextmenu", (event) => {
 const greedy = document.getElementById("greedy")
 const heuristic = document.getElementById("heuristic")
 const backtracking = document.getElementById("backtracking")
-const direct = document.getElementById("direct")
 greedy.addEventListener("click", () => {
   console.log()
 })
 heuristic.addEventListener("click", () => {
-
+  
 })
 backtracking.addEventListener("click", () => {
-
-})
-direct.addEventListener("click", () => {
-  const getArray = (list) => {
-    return list.map( cell =>  cell.cost)
+  const shortestWay = []
+  const points = Object.keys(cellRelation.getCellList())
+  const length = points.length - 1
+ /* console.log(length)
+  console.log(points)
+  console.log(cellRelation.getCellList())*/
+  const compareCost = () => {
+    console.log(shortestWay)
   }
-  
-  console.log( Math.min.apply(null, getArray(cellRelation.getRelations()) ))
+  const notRepeat = (k) => {
+    for (let i = 0; i < k; i++) {
+      console.log(i<k)
+      if ((shortestWay[k] === shortestWay[i] && (k !== i ))) return 0
+    }
+    return 1
+  }
+  const backTrac = (k) => {
+    for (let i = 0; i < length; i++) {
+      shortestWay[k] = points[i]
+      if (notRepeat(k)) {
+        if (k === length) {
+          compareCost()
+        } else {
+          backTrac(k + 1)
+        }
+      }
+    }
+  }
+  backTrac(0)
 })

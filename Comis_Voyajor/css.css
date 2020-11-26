@@ -109,10 +109,12 @@ svg line {
     width: calc(100% + 4px);
     display: none;
 }
-.variant_item{
+.variant_item {
     width: 100%;
     line-height: 1;
     padding: 10px 0;
+
+
 }
 .variant_item:last-child {
     padding: 10px 0 20px;
